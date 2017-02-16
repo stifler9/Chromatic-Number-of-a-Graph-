@@ -1,0 +1,33 @@
+def kromaticno_st(G(u,e))
+  z=length(u)
+  stevilo=z
+  resitev=[]
+  for(i in c(1:z))
+    x_i = 1
+  for(j in c(2:(z^z)))
+    q = 1
+    spr = TRUE
+    for(a in c(1:z))
+      if(spr == TRUE)
+        if(x_a == z)
+          x_a = 1
+          q = q+1
+        else
+          spr = FALSE
+    x_q = x_q+1
+    velja=TRUE
+    for((i,j) in e)
+      if(x_i == x_j)
+        velja=FALSE
+    if(velja==TRUE)
+      s = 1
+      for(k in c(1:z))
+        if(x_k > s)
+          s = x_k
+    if(s < stevilo)
+      stevilo = s
+      res=[]
+      for(m in c(1:z))
+        res = res +[x_m]
+      resitev = res
+  return(resitev)
